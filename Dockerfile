@@ -1,4 +1,4 @@
-FROM mlcamilli/chrome-headless-browser
+FROM selenium/standalone-chrome
 USER root
 RUN apt-get update
 RUN apt-get install -y python-pip python-dev libpq-dev
