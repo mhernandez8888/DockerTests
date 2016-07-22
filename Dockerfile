@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome
+FROM elgalu/selenium
 USER root
 RUN apt-get update
 RUN apt-get install -y python-pip python-dev libpq-dev
