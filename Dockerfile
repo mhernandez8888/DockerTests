@@ -1,7 +1,9 @@
 FROM markadams/chromium-xvfb
 
-RUN apt-get update && apt-get install -y \
-    python python-pip curl unzip libgconf-2-4
+RUN apt-get update && \
+    apt-get install -y python-pip python-dev libpq-dev curl unzip libgconf-2-4
+    
+RUN pip install virtualenv 
 
 RUN pip install pytest selenium
 
