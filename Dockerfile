@@ -1,8 +1,7 @@
 FROM robcherry/docker-chromedriver
 USER root
-
+RUN apt-get remove iceweasel
 RUN apt-get update
-RUN apt-get -f update
 RUN apt-get install firefox
 RUN apt-get install -y python-pip python-dev libpq-dev
 # Install Selenium
